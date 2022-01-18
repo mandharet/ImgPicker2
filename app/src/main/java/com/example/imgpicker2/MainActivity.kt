@@ -4,6 +4,7 @@ import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.os.Environment
+import android.util.Log
 import android.widget.Button
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
@@ -44,6 +45,11 @@ class MainActivity : AppCompatActivity() {
 
 
             imagePicker?.setImageURI(data?.data)
+            Log.d("Asach","${data?.data}")
+
+            var s1:String
+            s1 = data?.data.toString()
+            Log.d("Bdach",s1)
 
         }
 
